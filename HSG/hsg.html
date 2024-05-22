@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="hsg.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="616487.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Climate+Crisis&family=Lalezar&family=Press+Start+2P&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+   
+   
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Climate+Crisis&family=Lalezar&family=Poetsen+One&family=Press+Start+2P&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Hungry Snake!</title>
+</head>
+<body>
+    <div class="container-shadowbox">
+        <div class="head-title">
+            <h1 id="hungrySnakeTitle">Hungry Snake!</h1>
+        </div>
+        <div class="GameContainer">
+            <canvas id="gameBoard" width="500" height="500"></canvas>
+            <div id="gameOverContainer">
+                <button id="PlayAgain">Play Again!</button>
+            </div>
+            <div class="btnContainer">
+                <button id="resetBtn"><i id="refreshButton" class="fa fa-refresh fa-2x" aria-hidden="true"></i></button>
+                <button id="homeBtn"><i class="fa-solid fa-house"></i></button>
+            </div>
+            <div class="scoreContainer">
+                <!-- <i class="fa-solid fa-volume-xmark"></i>
+                <i class="fa-solid fa-volume-high"></i> -->
+                <div id="score"><i class="fa-solid fa-apple-whole" style="color: #dd4040;"></i> <span id="scoretext">0</span></div>
+                <div id="highScore"><i class="fa-solid fa-trophy" style="color: #b79310;"></i> <span id="highScoretext">0</span></div>
+            </div>
+        </div>
+    </div>
+    <audio id="homecardAudio">
+        <source src="shooting-sound-fx-159024.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="refreshAudio">
+        <source src='interface-124464.mp3' type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="negativeaudio">
+        <source src="negative_beeps-6008.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="eatAudio">
+        <source src="RPReplay_Final1715996719.mp4" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+
+
+    <audio id="rightAudio">
+        <source src="multi-pop-1-188165.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="leftAudio">
+        <source src="multi-pop-1-188165.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+
+
+    <audio id="upAudio">
+        <source src="pop-39222.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="downAudio">
+        <source src="pop-39222.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+
+    <script src="hsg.js"></script>
+</body>
+</html>

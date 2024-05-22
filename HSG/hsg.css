@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container-shadowbox {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    background-color: rgb(79, 154, 79);
+}
+
+.container-shadowbox h1 {
+    text-align: center;
+}
+
+.GameContainer {
+    position: relative;
+    text-align: center;
+    
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* Make canvas responsive */
+    height: auto; /* Automatically adjust height */
+    border:none;
+}
+
+
+/*Button styling*/
+.btnContainer {
+    display: flex;
+    flex-direction: row; /* Align children vertically */
+    justify-content: flex-start; /* Align children to the top */
+    align-items: flex-end; /* Align children to the right */
+    position: absolute;
+    top: -90px; /* Adjust top position */
+    right: -10px; /* Adjust right position */
+}
+@media screen and (max-width: 600px) {
+    .btnContainer {
+        right: -4%; /* Adjust right position for smaller screens */
+    }
+
+    #resetBtn, #homeBtn {
+        font-size: 0.8em; /* Adjust font size for smaller screens */
+    }
+}
+
+#resetBtn, #homeBtn{ /*Need to find our why the refresh without this guy keeps going to the left*/
+    width:35px;
+}
+ 
+
+#refreshButton {
+    font-size: 22px; /* Change the font size to the desired size */
+    color:rgb(4, 153, 161);
+}
+
+ 
+#homeBtn i {
+    font-size: 22px;
+    color:brown;
+}
+
+.btnContainer button {
+    margin: 0px 4px; /* Adjust the right margin to create space between buttons */
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.spin-animation {
+    animation: spin 1s linear; /* 1-second spin animation */
+    color:rgb(4, 153, 161);
+}
+
+button{background-color: transparent;
+
+border: transparent;}
+
+button:hover{cursor: pointer;}
+ 
+
+
+#resetBtn:hover i {
+    color:rgb(23, 129, 93); /* Change this to the color you want */
+}
+
+/* Hover effect for homeBtn */
+#homeBtn:hover i {
+    color: rgb(108, 7, 7); /* Change this to the color you want */
+}
+
+
+
+
+/*Score styling */
+#score, #highScore {
+ font-weight: 200;
+}
+#scoretext, #highScoretext {
+    font-family: 'Press Start 2P', cursive;
+  color:white
+}
+
+
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.spin-animation {
+    animation: spin 1s linear; /* 1-second spin animation */
+    color: rgb(4, 153, 161);
+}
+
+
+/* PlayAgain  */
+#gameOverContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+
+#PlayAgain {
+    display: none;
+    padding: 10px 20px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Margin to separate from GAME OVER text */
+    text-align: center;
+}
+
+#PlayAgain:hover {
+    background-color: gray;
+}
+#hungrySnakeTitle{ 
+    font-family: 'Press Start 2P', cursive;
+
+    color:rgb(255, 248, 248);
+}
+
+
