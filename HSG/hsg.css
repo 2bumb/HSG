@@ -25,12 +25,21 @@ body {
     
 }
 /*styling the  3 icons horizontally */
+/* Ensure the parent container is positioned relatively */
+.parentContainer { /* Replace with the actual class or ID of the parent container */
+    position: relative;
+    width: 100%; /* Ensure it takes full width */
+    height: 100vh; /* Ensure it takes full height */
+}
+
 .scoreContainer {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row; /* Keep items in a row */
+    align-items: flex-end; /* Align items to the bottom */
     gap: 20px; /* Adjust spacing between elements as needed */
-    text-align: center;
+    bottom: 0;
+    left: 0;
+    padding: 10px; /* Optional: Add padding for better positioning */
 }
 
 .scoreContainer i {
@@ -42,9 +51,11 @@ body {
     align-items: center;
     gap: 5px; /* Adjust spacing between icon and text */
 }
- 
+
 
 /*  */
+
+.spacing{padding:20px 0px}
 canvas {
     display: block;
     margin: 0 auto;

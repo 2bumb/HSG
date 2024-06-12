@@ -409,3 +409,54 @@ homeButton.addEventListener("click", function () {
         });
     }
 });
+
+//will fix this tomorrow & positioning of the retry and house icon
+
+
+const volume = document.querySelector("#volume");
+
+
+
+
+
+// function adjustAudio(){
+
+    
+//     if(volume.textContent.trim() ===<i class="fa-solid fa-volume-high"></i>)
+//         volume.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
+// }else{
+//     volume.innerHTML = '<i class="fa-solid fa-volume-high">';
+// }
+
+// const startButton = document.querySelector(".startbutton");
+// const clickcounter = document.getElementById("clickcounter");
+// const averageDisplay = document.getElementById("averageDisplay");
+// let spacebarPressed = false; // Flag to track whether spacebar is pressed
+// let clickCount = 0;
+// let totalClicks = 0; // Variable to store total clicks
+// let timerInterval; // Variable to store the timer interval
+
+// // Function to handle mouse click on the button
+// function mouseClickHandler() {
+//   clickCount++; // Increment the click count on each click
+
+//   // Check if the current text is "Start"
+//   if (startButton.textContent.trim() === "Start") {1
+//     // If the text is "Start", change it to "Retry"
+//     startButton.innerHTML = 'Retry <i class="fas fa-repeat"></i>';
+//     startButton.style.backgroundColor = "rgb(68, 196, 255)"; // Set background color for Retry
+
+//     // Hide average display when starting the game
+//     averageDisplay.style.display = "none";
+//   } else {
+//     // If the text is not "Start", change it back to "Start"
+//     startButton.innerHTML = '<span id="startrefreshdisplay"><i id="playIcon" class="fa-solid fa-play" style="color: #ffffff;"></i> Start</span>';
+//     startButton.style.backgroundColor = ""; // Remove background color for Start
+//     clickCount = 0; // Reset click count
+//     totalClicks = 0; // Reset total clicks
+//     clearInterval(timerInterval); // Stop the timer
+//     startTimer(11); // Restart the timer
+
+//     // Show average display when retrying the game
+//     averageDisplay.style.display = "none";
+//   }
