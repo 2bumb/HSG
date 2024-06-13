@@ -410,9 +410,10 @@ homeButton.addEventListener("click", function () {
     }
 });
 
-//will fix this tomorrow & positioning of the retry and house icon
+ 
 
-
+//addventlistner
+//understand better how I came up with this code
 document.getElementById('volumeButton').addEventListener('click', toggleVolumeIcon);
 
 document.addEventListener('keydown', function(event) {
