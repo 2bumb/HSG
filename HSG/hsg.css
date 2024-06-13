@@ -102,7 +102,7 @@ canvas {
 }
 
 .btnContainer button {
-    margin: 0px 4px; /* Adjust the right margin to create space between buttons */
+    margin: 45px 4px; /* Adjust the right margin to create space between buttons */
 }
 
 @keyframes spin {
