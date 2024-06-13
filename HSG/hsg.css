@@ -92,7 +92,7 @@ canvas {
 
 #refreshButton {
     font-size: 22px; /* Change the font size to the desired size */
-    color:rgb(4, 153, 161);
+    color:rgb(14, 215, 255);
 }
 
  
@@ -112,7 +112,6 @@ canvas {
 
 .spin-animation {
     animation: spin 1s linear; /* 1-second spin animation */
-    color:rgb(4, 153, 161);
 }
 
 button{background-color: transparent;
@@ -124,7 +123,7 @@ button:hover{cursor: pointer;}
 
 
 #resetBtn:hover i {
-    color:rgb(23, 129, 93); /* Change this to the color you want */
+    color:rgb(144, 247, 252); /* Change this to the color you want */
 }
 
 /* Hover effect for homeBtn */
@@ -153,7 +152,7 @@ button:hover{cursor: pointer;}
 
 .spin-animation {
     animation: spin 1s linear; /* 1-second spin animation */
-    color: rgb(4, 153, 161);
+   
 }
 
 

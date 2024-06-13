@@ -33,12 +33,24 @@
                 <button id="homeBtn"><i class="fa-solid fa-house"></i></button>
             </div>
             <div class="scoreContainer">
-       <button>  <div id="volume"><i class="fa-solid fa-volume-high"></i></div></button>
-        
+                <button id="volumeButton">
+                    <div id="volume">
+                        <i class="fa-solid fa-volume-high"></i>
+                        <i class="fa-solid fa-volume-xmark" id="volumeMute" style="display: none;"></i>
+                    </div>
+                </button>
+                
                 <!-- <i class="fa-solid fa-volume-xmark"></i> -->
-                <div id="score"><i class="fa-solid fa-apple-whole" style="color: #dd4040;"></i> <span id="scoretext">0</span></div>
-                <div id="highScore"><i class="fa-solid fa-trophy" style="color: #b79310;"></i> <span id="highScoretext">0</span></div>
+                <div id="score">
+                    <i class="fa-solid fa-apple-whole" style="color: #dd4040;"></i> 
+                    <span id="scoretext">0</span>
+                </div>
+                <div id="highScore">
+                    <i class="fa-solid fa-trophy" style="color: #b79310;"></i> 
+                    <span id="highScoretext">0</span>
+                </div>
             </div>
+            
         </div>
     </div>
     <audio id="homecardAudio">

@@ -413,10 +413,48 @@ homeButton.addEventListener("click", function () {
 //will fix this tomorrow & positioning of the retry and house icon
 
 
-const volume = document.querySelector("#volume");
+document.getElementById('volumeButton').addEventListener('click', toggleVolumeIcon);
+
+document.addEventListener('keydown', function(event) {
+    if (event.key.toLowerCase() === 'm') {
+        toggleVolumeIcon();
+    }
+});
+
+function toggleVolumeIcon() {
+    let volumeIcon = document.querySelector('#volume i');
+
+    if (volumeIcon.classList.contains('fa-volume-high')) {
+        volumeIcon.classList.remove('fa-volume-high');
+        volumeIcon.classList.add('fa-volume-xmark');
+           refreshAudio.volume = 0.0;
+           downAudio.volume = 0.0;
+           upAudio.volume = 0.0;
+           leftAudio.volume = 0.0;
+           rightAudio.volume = 0.0;
+           eatAudio.volume = 0.0;
+           negativeaudio.volume = 0.0;
+           refreshAudio.volume = 0.0;
+           homecardAudio.volume=0.0;
+    } else {
+        volumeIcon.classList.remove('fa-volume-xmark');
+        volumeIcon.classList.add('fa-volume-high');
+        refreshAudio.volume = 0.5;
+        downAudio.volume = 0.5;
+        upAudio.volume = 0.5;
+        leftAudio.volume = 0.5;
+        rightAudio.volume = 0.5;
+        eatAudio.volume = 0.5;
+        negativeaudio.volume = 0.5;
+        refreshAudio.volume = 0.5;
+        homecardAudio.volume=0.5;
+    }
+}
 
 
 
+
+let vid = document.getElementById("myVideo");
 
 
 // function adjustAudio(){
