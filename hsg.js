@@ -405,9 +405,10 @@ homeButton.addEventListener("click", function () {
     if (homecardAudio) {
         homecardAudio.play();
         homecardAudio.addEventListener('ended', function () {
-            window.location.href = "/Index.html/index.html";
+            console.log("The home button work :) ")
+            window.location.href = "https://indexminigames.netlify.app/";
         });
-    }
+    }else{console.log("The home button didn't work :( ")}
 });
 
  
