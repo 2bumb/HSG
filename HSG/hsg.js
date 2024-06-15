@@ -396,19 +396,19 @@ function changeDirection(event) {
     }
 }
 
+// testing href html is causing the problem
+// const homeButton = document.getElementById("homeBtn");
 
-const homeButton = document.getElementById("homeBtn");
+// homeButton.addEventListener("click", function () {
+//     const homecardAudio = document.getElementById("homecardAudio");
 
-homeButton.addEventListener("click", function () {
-    const homecardAudio = document.getElementById("homecardAudio");
-
-    if (homecardAudio) {
-        homecardAudio.play();
-        homecardAudio.addEventListener('ended', function () {
-            window.location.href = "/Index.html/index.html";
-        });
-    }
-});
+//     if (homecardAudio) {
+//         homecardAudio.play();
+//         homecardAudio.addEventListener('ended', function () {
+//             window.location.href = "/Index.html/index.html";
+//         });
+//     }
+// });
 
  
 
